@@ -6,6 +6,7 @@ public class Control {
 
     LinkedList<String> Jefes = new LinkedList<>();
 
+    LinkedList<JefeDeProyecto> JefesEnUso = new LinkedList<>();
 
     public JefeDeProyecto CrearJefe(String codigo, String nombre, String direccion, String tel){
         if (!Jefes.contains(nombre)){
@@ -18,6 +19,20 @@ public class Control {
 
         }
         return null;
+    }
+
+    public void AsignarJefe(JefeDeProyecto jefe, Proyecto proyecto){
+        if(!JefesEnUso.contains(jefe)){
+            proyecto.setJefe(jefe);
+            JefesEnUso.add(jefe);
+        }
+    }
+
+    public void SacarJefe(JefeDeProyecto jefe, Proyecto proyecto){
+        if(proyecto.getJefe() == jefe){
+            proyecto.setJefe(null);
+            JefesEnUso.remove(jefe);
+        }
     }
 
 }

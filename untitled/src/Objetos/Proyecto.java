@@ -28,7 +28,7 @@ public class Proyecto {
         this.nombre = nombre;
     }
 
-    public void setJefe(JefeDeProyecto jefe) {
+    protected void setJefe(JefeDeProyecto jefe) {
         this.jefe = jefe;
     }
 }
