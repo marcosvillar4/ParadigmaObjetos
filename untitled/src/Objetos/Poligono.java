@@ -19,6 +19,14 @@ public class Poligono extends Figura {
         }
     }
 
+    public void agregarLinea(Lineas l){
+        lineas.add(l);
+    }
+
+    public void sacarLinea(Lineas l){
+        lineas.remove(l);
+    }
+
 
 
 }

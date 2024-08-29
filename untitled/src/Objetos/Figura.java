@@ -12,15 +12,6 @@ public class Figura {
     LinkedList<Lineas> lineas = new LinkedList<>();
 
 
-    public void area(){
-        System.out.println("a");
-
-    }
-
-    public void perimetro(){
-        System.out.println("a");
-    }
-
     public double getPerimetro() {
         return perimetro;
     }
@@ -41,11 +32,5 @@ public class Figura {
         this.color = color;
     }
 
-    public void agregarLinea(Lineas l){
-        lineas.add(l);
-    }
 
-    public void sacarLinea(Lineas l){
-        lineas.remove(l);
-    }
 }
