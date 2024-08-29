@@ -9,6 +9,13 @@ public class Figura {
 
 
     public int area(){
+        System.out.println("a");
         return 0;
     }
+
+    public int perimetro(){
+        System.out.println("a");
+        return 0;
+    }
+
 }
