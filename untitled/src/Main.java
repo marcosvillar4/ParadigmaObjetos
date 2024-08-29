@@ -16,7 +16,8 @@ public class Main {
         proyecto1.setJefe(func.CrearJefe("AAAA", "Juan", "1234", "11111111"));
         //func.CrearJefe("BBB", "Juan","","");
 
-
+        Lineas linea = new Lineas("10", 15, 13);
+        System.out.println(linea.getLongitud());
 
 
     }

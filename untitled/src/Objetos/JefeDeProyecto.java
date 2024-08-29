@@ -9,10 +9,7 @@ public class JefeDeProyecto {
 
     public JefeDeProyecto(String codigo, String nombre, String direccion, String tel) {
         this.codigo = codigo;
-
-
         this.nombre = nombre;
-
         this.direccion = direccion;
         this.tel = tel;
     }
