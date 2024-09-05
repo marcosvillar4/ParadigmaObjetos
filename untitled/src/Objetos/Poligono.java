@@ -12,7 +12,6 @@ public class Poligono extends Figura {
         return this.numeroLineas;
     }
 
-    @Override
     public void perimetro(){
         for (int i = 0; i < lineas.size() - 1; i++) {
             perimetro = perimetro + lineas.get(i).longitud;
