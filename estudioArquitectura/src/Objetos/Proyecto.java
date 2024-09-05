@@ -1,5 +1,7 @@
 package Objetos;
 
+import java.util.LinkedList;
+
 public class Proyecto {
 
 
@@ -7,6 +9,11 @@ public class Proyecto {
     String nombre;
     JefeDeProyecto jefe;
 
+    static LinkedList<JefeDeProyecto> jefes = new LinkedList<>();
+
+    public Proyecto() {
+        jefe = null;
+    }
 
     public String getCodigo() {
         return codigo;
@@ -28,7 +35,18 @@ public class Proyecto {
         this.nombre = nombre;
     }
 
-    protected void setJefe(JefeDeProyecto jefe) {
-        this.jefe = jefe;
+    public void setJefe(JefeDeProyecto jefe) {
+        if(!jefes.contains(jefe) && this.jefe == null){
+            jefes.add(jefe);
+            this.jefe = jefe;
+        } else if (!jefes.contains(jefe) && this.jefe != null) {
+            jefes.remove(this.jefe);
+            jefes.add(jefe);
+            this.jefe = jefe;
+        } else {
+            System.out.println("Jefe ya asignado");
+        }
     }
+
+
 }
