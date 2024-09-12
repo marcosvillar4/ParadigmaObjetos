@@ -1,7 +1,5 @@
 import Objetos.*;
 
-import java.util.LinkedList;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("AAAA");
@@ -12,6 +10,10 @@ public class Main {
         Figura f1 = new Figura();
         Poligono f2 = new Poligono();
         proyecto1.setCodigo("AAA");
+
+
+        Circulo c1 = new Circulo(10);
+
 
         JefeDeProyecto j2 = new JefeDeProyecto("","","");
         JefeDeProyecto j1 = new JefeDeProyecto("","","");
@@ -24,7 +26,6 @@ public class Main {
 
         Lineas linea = new Lineas("10", 15, 13);
         System.out.println(linea.getLongitud());
-
-
+        
     }
 }

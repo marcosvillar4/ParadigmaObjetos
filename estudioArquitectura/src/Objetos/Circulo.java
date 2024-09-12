@@ -5,12 +5,17 @@ public class Circulo extends Figura{
 
     public Circulo(int radio) {
         this.radio = radio;
-
         area();
         perimetro();
     }
 
+    public int getRadio() {
+        return radio;
+    }
 
+    public void setRadio(int radio) {
+        this.radio = radio;
+    }
 
     public void area(){
         area = radio*radio*Math.PI;
