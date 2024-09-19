@@ -10,6 +10,7 @@ public class Cuenta {
     private double interes;
 
     private boolean activa;
+    int[] valores = new int[10];
 
     public Cuenta(String nombreCuenta, String apellidoCuenta, int numeroCuenta, String tipoCuenta) {
         this.nombreCuenta = nombreCuenta;
