@@ -13,7 +13,10 @@ abstract class Ciclista {
         this.tiempo = 0;
         this.nombre = nombre;
         this.id = id;
+
     }
+
+
 
     public int getId() {
         return id;

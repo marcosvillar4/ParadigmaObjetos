@@ -7,7 +7,7 @@ public class Escalador extends Ciclista{
     public Escalador(String nombre, int id) {
         super(nombre, id);
     }
-
+    
     public float getAceleracionPromedio() {
         return aceleracionPromedio;
     }
